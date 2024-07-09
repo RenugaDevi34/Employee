@@ -10,7 +10,7 @@ router.post('/employee',(req,res,next)=>{
     })
     emp.save().then((result)=>{
         res.status(200).json({
-            emploeeId: result.noteId,
+            employeeId: result.noteId,
             email:result.email,
             secret: result.secret,
             position: result.position,
